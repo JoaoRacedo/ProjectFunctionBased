@@ -8,14 +8,19 @@ BasicOperations
 
 Basic operations that can be performed in one or two images. This operations
 are:
-    - Add : Add two images or and image with a constant
-    - Mult : Multiplicate two images or and image with a constant
+    - AddImages : Add two images or and image with a constant
+    - SubsImages : Substract two images or and image with a constant
+    - MultImages : Multiplicate two images or and image with a constant
     - LogicalXor : Compute xor in two bool images/matrix
 """
 
 
 def AddImages(src1, src2):
     return src1 + src2
+
+
+def SubsImages(src1, src2):
+    return src1 - src2
 
 
 def MultImages(src1, src2):
