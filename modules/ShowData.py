@@ -20,3 +20,10 @@ def ShowData(src):
 def Label2RGB(src):
     LabelImage = skimage.color.label2rgb(src)
     ShowData(LabelImage)
+
+
+def ShowBoundaries(contours):
+    for x in range(0, len(contours)):
+        boundaries = contours[x]
+        plt.scatter(boundaries[:, 0], boundaries[:, 1], linewidths=2)
+    plt.show()

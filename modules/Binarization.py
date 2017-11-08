@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 import skimage.filters
+import numpy as np
 
 
 __doc__ = """\
@@ -16,3 +17,10 @@ def OtsuMethod(src):
 
 def Image2Binary(src, threshold):
     return src > threshold
+
+
+def TransformImage(src1, src2):
+    temp1 = np.copy(src1)
+    temp2 = np.copy(src2)
+    temp2[temp1 != 0] = 255
+    return temp2
