@@ -3,7 +3,7 @@ from scipy import ndimage as ndi
 import skimage.measure
 import mahotas
 import numpy as np
-import BasicOperations
+import modules.BasicOperations as BasicOperations
 
 __doc__ = """\
 Watershed
